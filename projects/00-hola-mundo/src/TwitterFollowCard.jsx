@@ -16,7 +16,7 @@ export function TwitterFollowCard({ children, name, initialIsFollowing}) {
   return(
     <article className="tw-followCard">
       <header className="tw-followCard-header">
-        <img className="tw-followCard-avatar" src={`https://unavatar.io/${name}`} alt="El avatar de un negro" />
+        <img className="tw-followCard-avatar" src={`https://unavatar.io/${name}`} alt="Foto del avatar" />
         <div className="tw-followCard-info">
           {children}
           <span className="tw-followCard-infoUserName">@{name}</span>
@@ -24,7 +24,8 @@ export function TwitterFollowCard({ children, name, initialIsFollowing}) {
       </header>
       <aside>
         <button className={buttonClassName} onClick={handleClick}>
-          {text}
+          <span className= 'ts-followCard-text'>{text}</span>
+          <span className='tw-followCard-stopFollow'>Dejar de seguir</span>
         </button>
       </aside>
     </article>
