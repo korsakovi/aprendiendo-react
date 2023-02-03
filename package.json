@@ -17,11 +17,8 @@
   "url": "https://github.com/korsakovi/aprendiendo-react/issues"
  },
  "homepage": "https://github.com/korsakovi/aprendiendo-react#readme",
- "devDependencies": {
-  "standard": "^17.0.0"
- },
- "eslintConfig": {
-  "extends": "./node_modules/standard/eslintrc.json"
+ "dependencies": {
+  "@vitejs/plugin-react": "3.0.1"
  }
 }
 
